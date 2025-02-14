@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Solution - Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="footer.js"></script>
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <img src="img/logo.png" alt="Logo Code Solution" class="logo-img" />
+                    <span>Code Solution</span>
+                </div>
+                <div class="nav-links">
+                    <a href="index.html" class="active">Home</a>
+                    <a href="servicos.html">Serviços</a>
+                    <a href="portfolio.html">Portfólio</a>
+                    <a href="contato.html">Contato</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section class="contact">
+        <div class="container">
+            <h1>Entre em Contato</h1>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Informações de Contato</h2>
+                    <div class="info-item">
+                        <i data-lucide="map-pin"></i>
+                        <p>Rua Exemplo, 123<br>São Paulo - SP</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="phone"></i>
+                        <p>(11) 1234-5678</p>
+                    </div>
+                    <div class="info-item">
+                        <i data-lucide="mail"></i>
+                        <p>contato@codesolution.com</p>
+                    </div>
+                </div>
+                <form id="contactForm" class="contact-form" onsubmit="handleSubmit(event)">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">
+                        <span>Enviar Mensagem</span>
+                        <i data-lucide="send"></i>
+                    </button>
+                </form>                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-links">
+                <!-- Email -->
+                <a href="mailto:contato@codesoluction.com" class="contact-item">
+                    <img src="https://cdn-icons-png.flaticon.com/128/15047/15047587.png" alt="Email" width="20" height="20"> 
+                    <span>contato@codesoluction.com</span>
+                </a>
+                
+                <div class="separator"></div>
+                
+                <!-- Instagram -->
+                <a href="https://instagram.com/codesoluction" target="_blank" rel="noopener noreferrer" class="contact-item">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png" alt="Instagram" width="20" height="20">
+                    <span>@codesoluction</span>
+                    <i class="fas fa-external-link-alt external-icon"></i>
+                </a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; <span id="year"></span> Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
