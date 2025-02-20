@@ -446,7 +446,31 @@ button.ad:active {
     font-size: 0.875rem;
     color: #4b5563;
 }
-
+.estilizado {
+    margin-top: 15px;
+    background-color: #1e54eb; /* Cor de fundo verde */
+    color: white; /* Cor do texto */
+    padding: 12px 19px; /* Espaçamento interno do botão */
+    text-align: center; /* Alinhar o texto ao centro */
+    text-decoration: none; /* Remover sublinhado */
+    display: inline-block; /* Permitir que o botão tenha o comportamento inline */
+    font-size: 14px; /* Tamanho da fonte */
+    border: none; /* Remover borda padrão */
+    border-radius: 8px; /* Borda arredondada */
+    cursor: pointer; /* Mostrar cursor de mão quando passar o mouse */
+    transition: background-color 0.3s, transform 0.2s; /* Adicionar transições suaves */
+  }
+  
+  .estilizado:hover {
+    background-color: #0f2972; /* Cor de fundo mais escura no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o tamanho do botão no hover */
+  }
+  
+  .estilizado:active {
+    background-color: #101781; /* Cor de fundo mais escura quando clicado */
+    transform: scale(0.98); /* Diminuir o tamanho do botão quando clicado */
+  }
+ 
 /* Contato */
 .contact {
     background-image: url(img/fundoher.jpg);
